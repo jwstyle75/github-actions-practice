@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
@@ -32,4 +32,5 @@ jobs:
       run: |
         docker container stop jw-flask-ac
         docker container rm jw-flask-ac
+
 
